@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Andy
+    </title>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Honk&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Poiret+One&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+  *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Hedvig Letters Sans', sans-serif;
+        font-family: 'Poiret One', sans-serif;
+}
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  transition: all 0.4s ease;
+}
+nav.sticky{
+  padding: 15px 20px;
+  background: #0a0a0a;
+  box-shadow: 0 5px 10px rgba(30, 24, 24, 0.927);
+}
+nav .nav-content{
+  height: 200%;
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .logo a{
+    padding: 30px 60px;
+  font-weight: 300;
+  font-size: 40px;
+  color: #dab7e6;
+  font-family: 'Honk', system-ui;
+font-family: 'Rubik Doodle Shadow', system-ui;
+}
+nav.sticky .logo a{
+  color: #dab7e6;
+}
+.nav-content .nav-links{
+  display: flex;
+}
+.nav-content .nav-links li{
+  list-style: none;
+  margin: 0 8px;
+}
+ .nav-links li a{
+  text-decoration: none;
+  color: #f4f6f7;
+  font-size: 31px;
+  
+  padding: 10px 40px;
+  transition: all 0.3s ease;
+}
+ .nav-links li a:hover{
+   color: #178fcb;
+ }
+ nav.sticky .nav-links li a{
+   color: #f9f9f9;
+   transition: all 0.2s ease;
+}
+ nav.sticky .nav-links li a:hover{
+  color: #178fcb;
+}
+.home{
+  height: 100vh;
+  width: 100%;
+  background: url("images/background.png") no-repeat;
+}
+
+   html, body {
+  width: 100%;
+  height:135%;
+  background-repeat: no-repeat;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(-45deg, #7386ac, #ed9004, #c585b2, #3b2138);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+        h3 {
+        padding: 0px 100px;
+        margin-top: 15%;
+        font-size: 6ch;
+        color:beige;
+        font-family: 'Hedvig Letters Sans', sans-serif;
+        font-family: 'Poiret One', sans-serif;
+        overflow: hidden;
+        white-space: nowrap};
+        .navbar {
+            background-color: #31d948;
+            position: fixed;
+            color: #31d948;
+        
+        }
+      p {
+        color: #3b2138;
+        font-size: 25px;
+      }
+
+    
+    </style>
+</head>
+<body>
+    <h3>
+        <pre>
+   Me presento
+    
+   Mi nombre es Andres 
+   <p>           Pero tu puedes llamarme Andy
+
+           Soy un estudiante que disfruta mucho de convivir con la gente y adoro aprender
+
+           diferentes habilidades <strong>(electronica, idiomas, box, trabajo, etc).</strong>
+
+           Lo que mas me llamó la atención de la programacion es la gran oportunidad de 
+
+           crecimiento a nivel tecnico y creativo, es impresionante la cantidad de cosas
+
+           que se pueden hacer solo usando código. Utilizo principalmente html y css para la
+
+           creacion de paginas web, aunque actualmente estoy aprendiendo javascript
+
+           para mejorar la calidad de estas.
+
+           Me gustan varias cosas, en general las que mas disfruto son
+
+           los videojuegos con historia, ver series, entrenar y los animales. Aunque
+
+           mi cosa favorita es, sin duda, la musica de todo tipo.
+
+       </p>
+    </pre>
+   </h3>
+    <nav>
+        <div class="nav-content">
+          <div class="logo">
+            <a href="index.html">AJ</a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="soy.html">¿Quién soy?</a></li>
+            <li><a href="proyectos.html">Proyectos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="home"></section>
+      <div class="text">
+       
+      </div>
+      <script>
+      let nav = document.querySelector("nav");
+        window.onscroll = function() {
+          if(document.documentElement.scrollTop > 20){
+            nav.classList.add("sticky");
+          }else {
+            nav.classList.remove("sticky");
+          }
+        } 
+    </script>
+       
+  
+</body>
+</html>
